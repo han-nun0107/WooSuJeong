@@ -1,0 +1,22 @@
+.main_sub_con2 {
+  display: grid;
+  grid-template-rows: 0.5fr 5fr;
+  background-color: black;
+}
+
+.con2__section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+#main_sub_con2__sec1 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+#main_sub_con2__sec4 {
+  grid-column: span 2;
+  grid-row: span 2;
+}

@@ -1,0 +1,45 @@
+.main_sub_con {
+  display: grid;
+  grid-template-rows: 0.2fr 2.5fr;
+  background-color: black;
+}
+
+.main_sub_con__div {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+.main_sub_con__sec {
+  grid-template-rows: 2fr 1fr;
+  border: 1px solid white;
+}
+
+.main_sub_con__sec iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.sub_con_p {
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 7%;
+}
+
+.sub_con_underLine {
+  padding-bottom: 3%;
+  border-bottom: 1px solid white;
+}
+
+.font_nick {
+  font-size: 0.7rem;
+  margin-bottom: 3%;
+}
+
+.font_title {
+  margin-bottom: 3%;
+}
+
+.con2__sec2__icon {
+  margin-top: 1%;
+  justify-content: space-between;
+}

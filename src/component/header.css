@@ -1,0 +1,109 @@
+.header {
+  grid-template-rows: 3fr 1fr;
+  background-color: black;
+}
+
+.header_con {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.3fr;
+  align-items: center;
+  height: 100%;
+  margin-left: 1%;
+}
+
+.header_con_logo {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.header_con_logo-link {
+  color: white;
+  text-decoration-line: none;
+}
+
+.header_con_menu {
+  display: flex;
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-left: 60%;
+  width: fit-content;
+}
+
+.menu_list {
+  position: absolute;
+  display: none;
+  padding: 0;
+  list-style-type: none;
+  background-color: white;
+  text-align: center;
+  z-index: 1;
+  color: black;
+  top: 100%;
+}
+
+.menu_list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  width: 7rem;
+  height: 2rem;
+}
+
+.menu_list li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration-line: none;
+}
+
+.menu_list li a:hover {
+  text-decoration-line: underline;
+}
+
+.header_con_menu:hover .menu_list {
+  display: block;
+}
+
+.toggle {
+  display: flex;
+  margin: 10%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.toggle-checkbox {
+  display: none;
+}
+
+.toggle-label {
+  display: inline-block;
+  width: 3.125rem;
+  height: 1.5625rem;
+  background-color: #ccc;
+  border-radius: 1.5625rem;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-label::after {
+  content: "";
+  position: absolute;
+  top: 0.125rem;
+  left: 0.125rem;
+  width: 1.3125rem;
+  height: 1.3125rem;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.toggle-checkbox:checked + .toggle-label {
+  background-color: #4caf50;
+}
+
+.toggle-checkbox:checked + .toggle-label::after {
+  transform: translateX(1.5625rem);
+}

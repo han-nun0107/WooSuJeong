@@ -1,0 +1,26 @@
+.main_sub_con1 {
+  display: grid;
+  grid-template-rows: 0.1fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
+  background-color: black;
+}
+.main_sub_con__sec {
+  border: 2px solid white;
+}
+
+#main_sub_con1__sec2 {
+  display: flex;
+  border: 1px solid #ffffff;
+  margin-bottom: 5%;
+}
+
+.main_sub_con1 iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.main_sub_con1_h1 {
+  grid-column: span 3;
+  margin-left: 1%;
+  margin-top: 1%;
+}

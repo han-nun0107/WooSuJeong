@@ -1,0 +1,11 @@
+.main_con {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  opacity: 1;
+  align-items: center;
+  justify-content: center;
+}
+.main_logo_right,
+.main_logo_left {
+  height: 100%;
+}
