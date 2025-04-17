@@ -1,4 +1,3 @@
-import "./footer.css";
 import FooterConHead from "./footerCom/footerConHead";
 import FooterConSec1 from "./footerCom/footerConSec1";
 import FooterConSec2 from "./footerCom/footerConSec2";
@@ -7,8 +6,8 @@ import FooterConSec4 from "./footerCom/footerConSec4";
 
 function Footer() {
   return (
-    <footer className="footer grid">
-      <div className="footer_con grid">
+    <footer className="grid gird-rows-[3fr_1fr] bg-[#36454f] h-75">
+      <div className="grid grid-cols-[1fr_1fr_1fr_1.5fr] mt-[2%] ml-[2%]">
         <FooterConHead />
         <FooterConSec1 />
         <FooterConSec2 />

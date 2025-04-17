@@ -4,8 +4,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-import "./main_display.css";
-
 function MainDisplay() {
   const leftConRef = useRef();
   const rightConRef = useRef();
@@ -46,21 +44,19 @@ function MainDisplay() {
 
   return (
     <>
-      <div ref={leftConRef} className="main_con grid">
-        <div className="main_logo_right">
+      <div ref={leftConRef} className="grid grid-cols-[1.5fr_1fr]">
+        <div className="h-[100%]">
           <img
             src="https://plus.unsplash.com/premium_photo-1673002092587-676a61e176b1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8JUVCJUIwJTk0JUVCJThCJUE0JTIwJUVEJTkyJThEJUVBJUIyJUJEfGVufDB8fDB8fHww"
             alt=""
-            width="100%"
-            height="100%"
+            className="h-[100%] w-[100%]"
           />
         </div>
-        <div ref={rightConRef} className="main_logo_left">
+        <div ref={rightConRef}>
           <img
             src="https://img.freepik.com/free-photo/man-jump-through-gaps-hills_1150-19693.jpg"
             alt=""
-            width="100%"
-            height="100%"
+            className="h-[100%] w-[100%]"
           />
         </div>
       </div>
