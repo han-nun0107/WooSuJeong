@@ -38,3 +38,5 @@ Thumbs.db
 # Optional: yarn lock or package-lock (팀 정책에 따라)
 # yarn.lock
 # package-lock.json
+
+.vercel

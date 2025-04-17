@@ -28,23 +28,23 @@ function Instagram() {
       <h1 className="text-[2rem] text-white dark:text-black">인스타그램</h1>
       <div className="grid grid-cols-4 grid-rows-2 gap-2.5">
         <div className="col-span-2 row-span-2 insta-card">
-          <img src="./src/assets/main-insta/1.jpg" alt="" className={imgWH} />
+          <img src="/main-insta/1.jpg" alt="" className={imgWH} />
         </div>
         <div className=" insta-card">
-          <img src="./src/assets/main-insta/2.jpg" alt="" className={imgWH} />
+          <img src="/main-insta/2.jpg" alt="" className={imgWH} />
         </div>
         <div className=" insta-card">
-          <img src="./src/assets/main-insta/3.jpg" alt="" className={imgWH} />
+          <img src="/main-insta/3.jpg" alt="" className={imgWH} />
         </div>
         <div className="col-span-2 row-span-2 insta-card">
-          <img src="./src/assets/main-insta/4.jpeg" alt="" className={imgWH} />
+          <img src="/main-insta/4.jpeg" alt="" className={imgWH} />
         </div>
 
         <div className=" insta-card">
-          <img src="./src/assets/main-insta/5.jpg" alt="" className={imgWH} />
+          <img src="/main-insta/5.jpg" alt="" className={imgWH} />
         </div>
         <div className=" insta-card">
-          <img src="./src/assets/main-insta/6.jpg" alt="" className={imgWH} />
+          <img src="/main-insta/6.jpg" alt="" className={imgWH} />
         </div>
       </div>
     </div>
