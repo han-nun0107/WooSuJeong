@@ -11,10 +11,12 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
+    "emailjs-com": "^3.2.0",
     "gsap": "^3.12.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-router-dom": "^7.5.0"
+    "react-router-dom": "^7.5.0",
+    "typeit-react": "^2.7.8"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",

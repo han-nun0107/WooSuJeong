@@ -1,13 +1,13 @@
 import { BrowserRouter, Link, Outlet, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./Home";
-import About from "./about";
+import Etc from "./Etc";
 import Info from "./info";
 
 function Layout() {
   return (
     <>
-      <header className="bg-black h-13">
+      <header className="bg-black h-13 w-[100%] z-50 fixed">
         <div className="grid grid-cols-[1fr_1fr_0.3fr] items-center h-full">
           <div className=" text-2xl font-black">
             <Link to="/home" className="header-link text-white ml-[1%]">
@@ -17,14 +17,26 @@ function Layout() {
           <div className="flex relative text-2xl font-black ml-[60%] w-fit group">
             <p className="text-white dark:text-white cursor-pointer">Menu</p>
             <ul className="absolute hidden group-hover:flex group-hover:flex-col top-full bg-white dark:bg-black text-black dark:text-white text-center z-10 list-none p-0 shadow-lg">
-              <Link to="/home" className="header-link">
-                home
+              <Link
+                to="/home"
+                className="header-link"
+                onClick={() => window.scrollTo(0, 0)}
+              >
+                Home
               </Link>
-              <Link to="/about" className="header-link">
-                about
+              <Link
+                to="/about"
+                className="header-link"
+                onClick={() => window.scrollTo(0, 0)}
+              >
+                Etc
               </Link>
-              <Link to="/Info" className="header-link">
-                info
+              <Link
+                to="/Info"
+                className="header-link"
+                onClick={() => window.scrollTo(0, 0)}
+              >
+                Info
               </Link>
             </ul>
           </div>
@@ -52,7 +64,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<Etc />} />
           <Route path="/Info" element={<Info />} />
         </Route>
       </Routes>
