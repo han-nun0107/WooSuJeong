@@ -10,7 +10,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-function About() {
+export default function About() {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -35,13 +35,11 @@ function About() {
         <div className="parallax-wrapper">
           <FirstSec />
           <SecSec />
-          <ThiSec />
         </div>
       </div>
+      <ThiSec />
       <ForSec />
       <ContactForm />
     </main>
   );
 }
-
-export default About;
