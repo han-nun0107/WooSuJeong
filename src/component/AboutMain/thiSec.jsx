@@ -2,9 +2,9 @@ import { projects } from "../../assets/data/data";
 
 export default function ThiSec() {
   return (
-    <section className="w-full h-screen bg-green-400 grid grid-cols-[repeat(auto-fit,_minmax(400px,_1fr))] items-center justify-center text-white text-4xl font-bold">
+    <section className="w-full min-h-screen bg-green-400 grid grid-cols-[repeat(auto-fit,_minmax(400px,_1fr))] items-center justify-center text-white text-4xl font-bold">
       {projects.map((project) => (
-        <div className="ml-[1%] mr-[1%] mt-[10%]">
+        <div className="ml-[1%] mr-[1%] mt-[10%] mb-[1%]">
           <a
             key={project.id}
             href={project.url}
