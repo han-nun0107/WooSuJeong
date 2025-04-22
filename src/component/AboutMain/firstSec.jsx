@@ -1,4 +1,5 @@
 import TypeIt from "typeit-react";
+import profileImg from "../../assets/images/profile.jpg";
 
 function FirstSec() {
   return (
@@ -71,7 +72,7 @@ function FirstSec() {
           className="
           grid grid-rows-[.1fr_.9fr] 
           bg-[#1a1a1a] 
-          border 
+          shadow-xl shadow-yellow-50/60 rounded-xl
           w-[70rem] h-[30rem]
         "
         >
@@ -94,11 +95,7 @@ function FirstSec() {
               text-[#fafaf8]
             "
             >
-              <img
-                src="src\assets\porfile.jpg"
-                alt=""
-                className="rounded-[50%] h-[90%]"
-              />
+              <img src={profileImg} alt="" className="rounded-[50%] h-[90%]" />
             </div>
 
             {/* 프로필 정보 */}

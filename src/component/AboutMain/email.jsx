@@ -1,6 +1,8 @@
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 
+import mailbox from "../../assets/images/mailbox.svg";
+
 function ContactForm() {
   const form = useRef();
 
@@ -38,8 +40,16 @@ function ContactForm() {
     "
     >
       {/* 이메일 폼 컨테이너 */}
-      <div className="grid grid-cols-2">
-        <div>내용</div>
+      <div className="grid grid-cols-2 gap-10">
+        <div className="flex flex-col items-center justify-center shadow-[-10px_10px_30px_rgba(59,130,246,0.3)]">
+          <div className="mb-10">
+            CONTACT <i className="fa-solid fa-envelope text-[2rem]"></i>
+          </div>
+          <p>Thank you : )</p>
+          <div className="flex flex col items-center w-[70%] h-[70%]">
+            <img src={mailbox} alt="" />
+          </div>
+        </div>
         <div>
           {/* 이메일 폼 */}
           <form ref={form} onSubmit={sendEmail}>
@@ -48,12 +58,12 @@ function ContactForm() {
               <input
                 type="text"
                 name="name"
-                placeholder="이름"
+                placeholder="NAME"
                 required
                 className="
                   border 
                   p-2 
-                  w-[30rem] 
+                  w-[100%] 
                   mb-3 
                   text-[#fafaf8]
                 "
@@ -64,12 +74,12 @@ function ContactForm() {
               <input
                 type="email"
                 name="email"
-                placeholder="이메일"
+                placeholder="EMAIL"
                 required
                 className="
                   border 
                   p-2 
-                  w-[30rem] 
+                  w-[100%] 
                   mb-3 
                   text-[#fafaf8]
                 "
@@ -80,12 +90,12 @@ function ContactForm() {
               <input
                 type="text"
                 name="title"
-                placeholder="제목"
+                placeholder="TITLE"
                 required
                 className="
                   border 
                   p-2 
-                  w-[30rem] 
+                  w-[100%] 
                   mb-3 
                   text-[#fafaf8]
                 "
@@ -95,7 +105,7 @@ function ContactForm() {
             <div>
               <textarea
                 name="message"
-                placeholder="내용"
+                placeholder="MESSAGE"
                 required
                 className="
                   border 
@@ -121,14 +131,15 @@ function ContactForm() {
               <button
                 type="submit"
                 className="
-                  bg-black 
-                  text-white 
+                  bg-[#fafaf8] 
+                  text-[#1a1a1a] 
                   px-4 py-2 
                   rounded 
                   cursor-pointer
+                  w-[100%]
                 "
               >
-                보내기
+                SEND
               </button>
             </div>
           </form>
