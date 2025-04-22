@@ -1,8 +1,6 @@
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 
-import mailbox from "../../assets/images/mailbox.svg";
-
 function ContactForm() {
   const form = useRef();
 
@@ -42,12 +40,17 @@ function ContactForm() {
       {/* 이메일 폼 컨테이너 */}
       <div className="grid grid-cols-2 gap-10">
         <div className="flex flex-col items-center justify-center shadow-[-10px_10px_30px_rgba(59,130,246,0.3)]">
-          <div className="mb-10">
+          <div className="mb-2">
             CONTACT <i className="fa-solid fa-envelope text-[2rem]"></i>
           </div>
           <p>Thank you : )</p>
-          <div className="flex flex col items-center w-[70%] h-[70%]">
-            <img src={mailbox} alt="" />
+          <div
+            className="flex
+          flex-col items-center
+          w-[70%] h-[70%]
+          mt-10"
+          >
+            <img src="src\images\mailbox.svg" alt="" />
           </div>
         </div>
         <div>

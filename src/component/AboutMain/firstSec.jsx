@@ -1,5 +1,4 @@
 import TypeIt from "typeit-react";
-import profileImg from "../../assets/images/profile.jpg";
 
 function FirstSec() {
   return (
@@ -95,7 +94,11 @@ function FirstSec() {
               text-[#fafaf8]
             "
             >
-              <img src={profileImg} alt="" className="rounded-[50%] h-[90%]" />
+              <img
+                src="src\images\profile.jpg"
+                alt=""
+                className="rounded-[50%] h-[90%]"
+              />
             </div>
 
             {/* 프로필 정보 */}

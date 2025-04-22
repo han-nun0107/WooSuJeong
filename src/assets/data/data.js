@@ -1,4 +1,4 @@
-import gsapPageImg from "../images/gsap-page.png";
+import gsapPageImg from "../../images/gsap-page.png";
 
 export const projects = [
   {
