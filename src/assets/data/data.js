@@ -1,5 +1,3 @@
-import gsapPageImg from "../../images/gsap-page.png";
-
 export const projects = [
   {
     title: "Gsap 페이지",
@@ -7,7 +5,7 @@ export const projects = [
     subtitle: "React & Tailwind CSS & Gsap & GsapScroll ",
     description: "개인 포트폴리오를 위한 Gsap를 활요하여 만든 페이지 입니다.",
     skill: "Html, Tailwind, React",
-    image: gsapPageImg,
+    image: "/images/gsap-page.png",
     link: "https://gsap-page-kappa.vercel.app/",
   },
   {

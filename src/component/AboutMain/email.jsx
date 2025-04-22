@@ -50,7 +50,7 @@ function ContactForm() {
           w-[70%] h-[70%]
           mt-10"
           >
-            <img src="src\images\mailbox.svg" alt="" />
+            <img src="/images/mailbox.svg" alt="" />
           </div>
         </div>
         <div>

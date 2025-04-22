@@ -95,7 +95,7 @@ function FirstSec() {
             "
             >
               <img
-                src="src\images\profile.jpg"
+                src="/images/profile.jpg"
                 alt=""
                 className="rounded-[50%] h-[90%]"
               />
