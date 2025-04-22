@@ -23,7 +23,7 @@ export default function ThiSec() {
         >
           {/* 프로젝트 링크 */}
           <a
-            href={project.url}
+            href={project.link}
             target="_blank"
             rel="noopener noreferrer"
             className="
@@ -76,6 +76,16 @@ export default function ThiSec() {
               "
               >
                 {project.description}
+              </p>
+              <p
+                className="
+                text-sm 
+                text-[#1a1a1a] 
+                dark:text-gray-300 
+                mt-2
+              "
+              >
+                {project.skill}
               </p>
             </div>
           </a>
