@@ -1,7 +1,6 @@
 import { BrowserRouter, Link, Outlet, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./Home";
-import Etc from "./Etc";
 import Info from "./info";
 
 // 레이아웃 컴포넌트 (헤더와 아웃렛을 포함)
