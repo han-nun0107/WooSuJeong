@@ -1,25 +1,55 @@
 function FooterConSec1() {
   return (
-    <div className="no-underline">
+    // 푸터 섹션 1 컨테이너
+    <div
+      className="
+        no-underline
+      "
+    >
       <div>
-        <div className="text-white ">
+        {/* 연락처 정보 */}
+        <div
+          className="
+            text-white
+          "
+        >
           <p>
-            <a href="tel:01088940034" className="hover:underline">
+            <a
+              href="tel:01088940034"
+              className="
+                hover:underline
+              "
+            >
               전화번호
             </a>
           </p>
           <p>
-            <a href="mailto:spshspshek@gmail.com" className="hover:underline">
+            <a
+              href="mailto:spshspshek@gmail.com"
+              className="
+                hover:underline
+              "
+            >
               이메일
             </a>
           </p>
         </div>
         <br />
-        <div className="text-white">
+        {/* 주소 정보 */}
+        <div
+          className="
+            text-white
+          "
+        >
           <p>서울특별시 종로구 종로0가 000-00</p>
         </div>
         <br />
-        <div className="flex">
+        {/* 소셜 미디어 아이콘 */}
+        <div
+          className="
+            flex
+          "
+        >
           <div className={Icon}>
             <i className="fa-brands fa-facebook"></i>
           </div>
@@ -38,6 +68,7 @@ function FooterConSec1() {
   );
 }
 
+// 아이콘 스타일 상수
 const Icon = "cursor-pointer mt-[2%] mr-[2.5%] text-white";
 
 export default FooterConSec1;

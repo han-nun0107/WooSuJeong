@@ -27,12 +27,36 @@ function Interduce() {
   }, []);
 
   return (
+    // 소개 섹션 컨테이너 (GSAP 애니메이션 적용)
     <>
-      <div className="grid grid-rows-[0.2fr_2.5fr] ml-[1%] mr-[1%]">
-        <h1 className="text-white dark:text-black text-3xl  flex items-center">
+      <div
+        className="
+          grid 
+          grid-rows-[0.2fr_2.5fr] 
+          ml-[1%] 
+          mr-[1%]
+        "
+      >
+        {/* 섹션 제목 */}
+        <h1
+          className="
+            text-white 
+            dark:text-black 
+            text-3xl  
+            flex 
+            items-center
+          "
+        >
           소개
         </h1>
-        <div className="grid grid-cols-[1fr_1fr_1fr] gap-[15px]">
+        {/* 소개 컴포넌트 그리드 */}
+        <div
+          className="
+            grid 
+            grid-cols-[1fr_1fr_1fr] 
+            gap-[15px]
+          "
+        >
           <InterduceCom
             className="w-[100%] h-[100%] interduce-card"
             iframeID={"sub_con_iframe1"}

@@ -23,6 +23,9 @@ function Instagram() {
       },
     });
   }, []);
+
+  const imgWH = "w-full h-full";
+
   return (
     <div className="grid grid-rows-[.5fr_5fr] mb-[1%] ml-[1%] mr-[1%]">
       <h1 className="text-[2rem] text-white dark:text-black">인스타그램</h1>
@@ -30,27 +33,24 @@ function Instagram() {
         <div className="col-span-2 row-span-2 insta-card">
           <img src="/main-insta/1.jpg" alt="" className={imgWH} />
         </div>
-        <div className=" insta-card">
+        <div className="insta-card">
           <img src="/main-insta/2.jpg" alt="" className={imgWH} />
         </div>
-        <div className=" insta-card">
+        <div className="insta-card">
           <img src="/main-insta/3.jpg" alt="" className={imgWH} />
         </div>
         <div className="col-span-2 row-span-2 insta-card">
           <img src="/main-insta/4.jpeg" alt="" className={imgWH} />
         </div>
-
-        <div className=" insta-card">
+        <div className="insta-card">
           <img src="/main-insta/5.jpg" alt="" className={imgWH} />
         </div>
-        <div className=" insta-card">
+        <div className="insta-card">
           <img src="/main-insta/6.jpg" alt="" className={imgWH} />
         </div>
       </div>
     </div>
   );
 }
-
-const imgWH = "w-full h-full";
 
 export default Instagram;

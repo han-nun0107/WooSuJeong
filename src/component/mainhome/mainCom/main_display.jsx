@@ -43,20 +43,36 @@ function MainDisplay() {
   }, []);
 
   return (
+    // 메인 디스플레이 컨테이너 (GSAP 애니메이션 적용)
     <>
-      <div ref={leftConRef} className="grid grid-cols-[1.5fr_1fr]">
+      {/* 왼쪽/오른쪽 이미지 그리드 */}
+      <div
+        ref={leftConRef}
+        className="
+          grid 
+          grid-cols-[1.5fr_1fr]
+        "
+      >
+        {/* 왼쪽 이미지 */}
         <div className="h-[100%]">
           <img
             src="https://plus.unsplash.com/premium_photo-1673002092587-676a61e176b1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8JUVCJUIwJTk0JUVCJThCJUE0JTIwJUVEJTkyJThEJUVBJUIyJUJEfGVufDB8fDB8fHww"
             alt=""
-            className="h-[100%] w-[100%]"
+            className="
+              h-[100%] 
+              w-[100%]
+            "
           />
         </div>
+        {/* 오른쪽 이미지 (GSAP 애니메이션 적용) */}
         <div ref={rightConRef}>
           <img
             src="https://img.freepik.com/free-photo/man-jump-through-gaps-hills_1150-19693.jpg"
             alt=""
-            className="h-[100%] w-[100%]"
+            className="
+              h-[100%] 
+              w-[100%]
+            "
           />
         </div>
       </div>

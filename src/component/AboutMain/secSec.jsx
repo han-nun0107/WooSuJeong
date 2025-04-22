@@ -2,8 +2,28 @@ import SkillBar from "./About/skill";
 
 export default function SecSec() {
   return (
-    <section className="moveCard w-full h-screen bg-blue-400 flex flex-col items-center justify-center text-white font-bold">
-      <p className="text-6xl mb-[5%]">Skill</p>
+    // 스킬 섹션
+    <section
+      className="
+      moveCard 
+      w-full h-screen 
+      bg-[#2c2c2c] 
+      text-[#fafaf8] 
+      flex flex-col items-center justify-center  
+      font-bold
+    "
+    >
+      {/* 섹션 제목 */}
+      <p
+        className="
+        text-6xl 
+        mb-[5%]
+      "
+      >
+        Skill
+      </p>
+
+      {/* 스킬 바 목록 */}
       <SkillBar name="HTML5" percent="70" />
       <SkillBar name="CSS" percent="70" />
       <SkillBar name="JavaScript" percent="50" />
