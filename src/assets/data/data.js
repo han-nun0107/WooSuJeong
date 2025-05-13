@@ -9,13 +9,14 @@ export const projects = [
     link: "https://gsap-page-kappa.vercel.app/",
   },
   {
-    title: "ToDo 앱",
+    title: "날씨 API 웹",
     id: 2,
-    subtitle: "React & Firebase",
-    description: "실시간 데이터베이스를 활용한 할 일 관리 앱입니다.",
-    skill: "",
-    image: "./images/todo.png",
-    link: "https://yourtodoapp.com",
+    subtitle: "React & Tailwind CSS & React-router-dom",
+    description:
+      "날씨 api를 받아와 만든 날씨 웹 입니다. 일부 지역 한글로 검색이 가능합니다.",
+    skill: "Html, Tailwind, React, async",
+    image: "/images/weather.jpg",
+    link: "https://search-weather-five.vercel.app",
   },
   {
     title: "ToDo 앱",

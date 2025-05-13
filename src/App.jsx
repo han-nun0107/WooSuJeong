@@ -100,6 +100,7 @@ function Layout() {
               <li>
                 <a
                   href="https://han-nun0107.github.io/"
+                  target="_blank"
                   className="
                     hover:underline
                   "
